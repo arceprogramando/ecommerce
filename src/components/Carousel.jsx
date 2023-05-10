@@ -1,5 +1,5 @@
 import '../index.css'
-import { pmnwine } from '../assets';
+import { winewallpaper } from '../assets';
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar';
 
 
 const Carousel = () => {
-    const images = [pmnwine, pmnwine, pmnwine];
+    const images = [winewallpaper, winewallpaper, winewallpaper];
 
     return (
         <Swiper
@@ -21,17 +21,17 @@ const Carousel = () => {
             slidesPerView={1}
             loop={true}
             autoplay={{
-                delay: 2500,
+                delay: 12000,
                 disableOnInteraction: false,
             }}
             navigation={{
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
             }}
-            className="max-w-4xl"
+            className="max-w-screen-2xl mb-4 "
         >
             {images.map((image, index) => (
-                <SwiperSlide key={index} className="flex justify-center items-center">
+                <SwiperSlide key={index} className="max-w-full">
                     <img src={image} alt={`Slide ${index + 1}`} />
                 </SwiperSlide>
             ))}

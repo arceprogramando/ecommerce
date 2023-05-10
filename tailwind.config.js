@@ -19,8 +19,8 @@ export default {
       xl: '1280px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      '2xl': '1300px',
+      // => @media (min-width: 1300px) { ... }
     },
     colors: {
       // Primary Color

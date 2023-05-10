@@ -1,24 +1,24 @@
 import styles from "../style"
 import { cart, login, logo, message } from "../assets"
-import Carousel from "./Carrousel"
+
 const Header = () => {
     return (
         <>
-            <header >
-                <div className={styles.bannerFonts}>
-                    venta por caja exclusivamente
-                </div>
+            <div className={styles.bannerFonts}>
+                venta por caja exclusivamente
+            </div>
+            <header className="mb-2">
                 <div className={styles.center}>
 
                     <div className="flex justify-between container ">
                         <img src={logo} alt="Logo" />
                         <nav className={styles.center}>
                             <ul className={styles.center}>
-                                <li className="">Vinos</li>
-                                <li className="">Espumantes</li>
-                                <li className="">Destilados</li>
-                                <li className="">Especiales</li>
-                                <li className="">Gift Card</li>
+                                <li className={styles.navbarItems}>Vinos</li>
+                                <li className={styles.navbarItems}>Espumantes</li>
+                                <li className={styles.navbarItems}>Destilados</li>
+                                <li className={styles.navbarItems}>Especiales</li>
+                                <li className={styles.navbarItems}>Gift Card</li>
                             </ul>
                         </nav>
                         <div className={styles.center}>
@@ -29,7 +29,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <Carousel />
+
         </>
     )
 }
