@@ -1,4 +1,5 @@
 import Carousel from "./Carousel"
+import ItemListContainer from "./ItemListContainer/ItemListContainer"
 import ShippingInfo from "./ShippingInfo"
 
 const Main = () => {
@@ -7,6 +8,7 @@ const Main = () => {
             <main >
                 <Carousel />
                 <ShippingInfo />
+                <ItemListContainer />
             </main>
         </>
     )
